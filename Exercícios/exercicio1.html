@@ -6,13 +6,10 @@
     <title>Document</title>
 </head>
 <body>
-    <button onclick="playSound()">Tocar Som</button>
-
-    <audio id="sound" src="som.mp3"></audio>
-
+    <button onclick="changeColor()">Clique aqui</button>
     <script>
-        function playSound() {
-            document.getElementById("sound").play();
+        function changeColor(){
+            document.body.style.backgroundColor = "#e800ff";
         }
     </script>
 </body>

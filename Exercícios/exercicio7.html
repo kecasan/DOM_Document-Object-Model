@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img id="image" src="media/img1.jpg" width="200">
+<button onclick="changeImage()">Trocar imagem</button>
+
+<script>
+    function changeImage() {
+        var img = document.getElementById("image");
+        if (img.src.endsWith("media/img1.jpg")) {
+            img.src = "media/img2.jpg";
+        } else {
+            img.src = "media/img1.jpg";
+        }
+    }
+</script>
+</body>
+</html>
