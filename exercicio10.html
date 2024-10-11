@@ -1,0 +1,21 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="semaforo" style="width: 100px; height: 300px; background-color: red;"></div>
+    <button onclick="changeColor('red')">Vermelho</button>
+    <button onclick="changeColor('yellow')">Amarelo</button>
+    <button onclick="changeColor('green')">Verde</button>
+
+<script>
+    function changeColor(color) {
+        document.getElementById("semaforo").style.backgroundColor = color;
+    }
+</script>
+</body>
+</html>

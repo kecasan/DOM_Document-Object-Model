@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <progress id="progressBar" value="0" max="100"></progress>
+    <br>
+    <button onclick="increaseProgress()">Aumentar Progresso</button>
+
+    <script>
+        function increaseProgress() {
+            var progressBar = document.getElementById("progressBar");
+            if (progressBar.value < 100) {
+                progressBar.value += 10;
+            } else {
+                alert("Progresso completo!");
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="range" min="10" max="50" oninput="changeFontSize(this.value)">
+    <p id="text">Altere o tamanho da fonte deste texto.</p>
+
+<script>
+    function changeFontSize(size) {
+        document.getElementById("text").style.fontSize = size + "px";	
+    }
+</script>
+</body>
+</html>
