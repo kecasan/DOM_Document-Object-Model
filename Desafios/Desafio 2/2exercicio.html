@@ -6,16 +6,16 @@
     <title>Document</title>
 </head>
 <body>
-    <input type="number" id="senha">
+    <input type="text" id="senha">
     <button onclick="valida()">Validar</button>
 
     <script>
         function valida(){
         var pass = document.getElementById("senha").value;
         if (Number.isNaN(pass)) {
-                console.log("Por favor coloque apenas números")
+                console.log("Beleza")
             } else {
-                console.log("teste")
+                console.log("Errado")
             }
         }
     </script>
