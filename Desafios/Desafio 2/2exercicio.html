@@ -7,15 +7,15 @@
 </head>
 <body>
     <input type="number" id="senha">
-    <button onclick="valida">Validar</button>
+    <button onclick="valida()">Validar</button>
 
     <script>
-        function valida() {
-            let senha = document.getElementById('senha').nodeType;
-            if (senha == (nodeType)) {
-                alert('Senha correta');
+        function valida(){
+        var pass = document.getElementById("senha").value;
+        if (Number.isNaN(pass)) {
+                console.log("Por favor coloque apenas números")
             } else {
-                alert('Senha incorreta');
+                console.log("teste")
             }
         }
     </script>
