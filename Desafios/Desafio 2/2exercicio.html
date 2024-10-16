@@ -12,10 +12,10 @@
     <script>
         function valida(){
         var pass = document.getElementById("senha").value;
-        if (Number.isNaN(pass)) {
-                console.log("Beleza")
+        if (!isNaN(pass)) {
+                console.log("Sim, é um número")
             } else {
-                console.log("Errado")
+                console.log("Não, não é um número")
             }
         }
     </script>
